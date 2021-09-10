@@ -1,0 +1,816 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Shaders/blob.shader" type="Shader" id=1]
+[ext_resource path="res://Scenes/Blob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scripts/BlobLayer.gd" type="Script" id=3]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+
+[sub_resource type="ViewportTexture" id=1]
+viewport_path = NodePath("BlobEffectsView")
+
+[node name="Player" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="BlobEffectsTexRect" type="TextureRect" parent="."]
+material = SubResource( 2 )
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = SubResource( 1 )
+flip_v = true
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="BlobLayer" type="CanvasLayer" parent="."]
+layer = 0
+script = ExtResource( 3 )
+
+[node name="Blobs" type="Node" parent="BlobLayer"]
+
+[node name="Blob" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 855.444, 278.066 )
+
+[node name="Blob2" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1027.88, 268.552 )
+
+[node name="Blob3" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 862.579, 420.771 )
+
+[node name="Blob4" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1035.01, 411.257 )
+
+[node name="Blob5" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 526.034, 289.958 )
+
+[node name="Blob6" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 698.469, 280.444 )
+
+[node name="Blob7" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 533.169, 432.663 )
+
+[node name="Blob8" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 705.604, 423.149 )
+
+[node name="Blob9" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 866.147, 519.475 )
+
+[node name="Blob10" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1038.58, 509.961 )
+
+[node name="Blob11" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 873.282, 662.18 )
+
+[node name="Blob12" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1045.72, 652.666 )
+
+[node name="Blob13" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 536.737, 531.367 )
+
+[node name="Blob14" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 709.172, 521.853 )
+
+[node name="Blob15" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 543.872, 674.072 )
+
+[node name="Blob16" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 716.307, 664.558 )
+
+[node name="Blob17" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 924.934, 272.721 )
+
+[node name="Blob18" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1097.37, 263.207 )
+
+[node name="Blob19" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 932.07, 415.425 )
+
+[node name="Blob20" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1104.5, 405.912 )
+
+[node name="Blob21" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 595.524, 284.613 )
+
+[node name="Blob22" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 767.959, 275.099 )
+
+[node name="Blob23" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 602.659, 427.317 )
+
+[node name="Blob24" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 775.095, 417.804 )
+
+[node name="Blob25" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 935.637, 514.13 )
+
+[node name="Blob26" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1108.07, 504.616 )
+
+[node name="Blob27" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 942.772, 656.834 )
+
+[node name="Blob28" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1115.21, 647.321 )
+
+[node name="Blob29" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 606.227, 526.021 )
+
+[node name="Blob30" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 778.662, 516.508 )
+
+[node name="Blob31" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 613.362, 668.726 )
+
+[node name="Blob32" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 785.797, 659.213 )
+
+[node name="Blob33" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 848.317, 215.703 )
+
+[node name="Blob34" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1020.75, 206.189 )
+
+[node name="Blob35" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 855.452, 358.408 )
+
+[node name="Blob36" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1027.89, 348.894 )
+
+[node name="Blob37" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 518.907, 227.595 )
+
+[node name="Blob38" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 691.342, 218.081 )
+
+[node name="Blob39" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 526.042, 370.3 )
+
+[node name="Blob40" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 698.477, 360.786 )
+
+[node name="Blob41" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 859.02, 457.112 )
+
+[node name="Blob42" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1031.46, 447.598 )
+
+[node name="Blob43" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 866.155, 599.817 )
+
+[node name="Blob44" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1038.59, 590.303 )
+
+[node name="Blob45" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 529.61, 469.004 )
+
+[node name="Blob46" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 702.045, 459.49 )
+
+[node name="Blob47" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 536.745, 611.709 )
+
+[node name="Blob48" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 709.18, 602.195 )
+
+[node name="Blob49" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 917.807, 210.358 )
+
+[node name="Blob50" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1090.24, 200.844 )
+
+[node name="Blob51" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 924.942, 353.062 )
+
+[node name="Blob52" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1097.38, 343.549 )
+
+[node name="Blob53" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 588.397, 222.25 )
+
+[node name="Blob54" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 760.832, 212.736 )
+
+[node name="Blob55" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 595.532, 364.955 )
+
+[node name="Blob56" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 767.967, 355.441 )
+
+[node name="Blob57" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 928.51, 451.767 )
+
+[node name="Blob58" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1100.95, 442.253 )
+
+[node name="Blob59" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 935.645, 594.471 )
+
+[node name="Blob60" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1108.08, 584.958 )
+
+[node name="Blob61" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 599.1, 463.659 )
+
+[node name="Blob62" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 771.535, 454.145 )
+
+[node name="Blob63" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 606.235, 606.363 )
+
+[node name="Blob64" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 778.67, 596.85 )
+
+[node name="Blob65" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 894.644, 279.848 )
+
+[node name="Blob66" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1067.08, 270.334 )
+
+[node name="Blob67" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 901.779, 422.553 )
+
+[node name="Blob68" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1074.21, 413.039 )
+
+[node name="Blob69" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 565.234, 291.74 )
+
+[node name="Blob70" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 737.669, 282.226 )
+
+[node name="Blob71" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 572.369, 434.445 )
+
+[node name="Blob72" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 744.804, 424.931 )
+
+[node name="Blob73" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 905.347, 521.257 )
+
+[node name="Blob74" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1077.78, 511.743 )
+
+[node name="Blob75" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 912.482, 663.961 )
+
+[node name="Blob76" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1084.92, 654.448 )
+
+[node name="Blob77" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 575.936, 533.149 )
+
+[node name="Blob78" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 748.372, 523.635 )
+
+[node name="Blob79" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 583.071, 675.854 )
+
+[node name="Blob80" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 755.507, 666.34 )
+
+[node name="Blob81" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 964.134, 274.502 )
+
+[node name="Blob82" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1136.57, 264.989 )
+
+[node name="Blob83" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 971.269, 417.207 )
+
+[node name="Blob84" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1143.7, 407.693 )
+
+[node name="Blob85" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 634.724, 286.394 )
+
+[node name="Blob86" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 807.159, 276.881 )
+
+[node name="Blob87" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 641.859, 429.099 )
+
+[node name="Blob88" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 814.294, 419.586 )
+
+[node name="Blob89" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 974.837, 515.911 )
+
+[node name="Blob90" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1147.27, 506.398 )
+
+[node name="Blob91" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 981.972, 658.616 )
+
+[node name="Blob92" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1154.41, 649.102 )
+
+[node name="Blob93" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 645.426, 527.803 )
+
+[node name="Blob94" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 817.862, 518.29 )
+
+[node name="Blob95" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 652.561, 670.508 )
+
+[node name="Blob96" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 824.997, 660.994 )
+
+[node name="Blob97" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 887.517, 217.485 )
+
+[node name="Blob98" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1059.95, 207.971 )
+
+[node name="Blob99" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 894.652, 360.19 )
+
+[node name="Blob100" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1067.09, 350.676 )
+
+[node name="Blob101" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 558.106, 229.377 )
+
+[node name="Blob102" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 730.542, 219.863 )
+
+[node name="Blob103" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 565.241, 372.082 )
+
+[node name="Blob104" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 737.677, 362.568 )
+
+[node name="Blob105" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 898.22, 458.894 )
+
+[node name="Blob106" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1070.65, 449.38 )
+
+[node name="Blob107" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 905.355, 601.599 )
+
+[node name="Blob108" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1077.79, 592.085 )
+
+[node name="Blob109" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 568.809, 470.786 )
+
+[node name="Blob110" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 741.244, 461.272 )
+
+[node name="Blob111" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 575.944, 613.491 )
+
+[node name="Blob112" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 748.38, 603.977 )
+
+[node name="Blob113" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 957.007, 212.139 )
+
+[node name="Blob114" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1129.44, 202.626 )
+
+[node name="Blob115" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 964.142, 354.844 )
+
+[node name="Blob116" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1136.58, 345.331 )
+
+[node name="Blob117" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 627.596, 224.031 )
+
+[node name="Blob118" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 800.032, 214.518 )
+
+[node name="Blob119" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 634.732, 366.736 )
+
+[node name="Blob120" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 807.167, 357.223 )
+
+[node name="Blob121" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 967.71, 453.548 )
+
+[node name="Blob122" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1140.14, 444.035 )
+
+[node name="Blob123" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 974.845, 596.253 )
+
+[node name="Blob124" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1147.28, 586.74 )
+
+[node name="Blob125" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 638.299, 465.44 )
+
+[node name="Blob126" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 810.735, 455.927 )
+
+[node name="Blob127" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 645.434, 608.145 )
+
+[node name="Blob128" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 817.87, 598.632 )
+
+[node name="Blob129" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 855.444, 311.92 )
+
+[node name="Blob130" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1027.88, 302.406 )
+
+[node name="Blob131" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 862.579, 454.625 )
+
+[node name="Blob132" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1035.01, 445.111 )
+
+[node name="Blob133" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 526.034, 323.812 )
+
+[node name="Blob134" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 698.469, 314.298 )
+
+[node name="Blob135" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 533.169, 466.517 )
+
+[node name="Blob136" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 705.604, 457.003 )
+
+[node name="Blob137" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 866.147, 553.329 )
+
+[node name="Blob138" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1038.58, 543.815 )
+
+[node name="Blob139" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 873.282, 696.034 )
+
+[node name="Blob140" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1045.72, 686.52 )
+
+[node name="Blob141" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 536.737, 565.221 )
+
+[node name="Blob142" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 709.172, 555.707 )
+
+[node name="Blob143" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 543.872, 707.926 )
+
+[node name="Blob144" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 716.307, 698.412 )
+
+[node name="Blob145" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 924.934, 306.575 )
+
+[node name="Blob146" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1097.37, 297.061 )
+
+[node name="Blob147" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 932.07, 449.279 )
+
+[node name="Blob148" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1104.5, 439.766 )
+
+[node name="Blob149" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 595.524, 318.467 )
+
+[node name="Blob150" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 767.959, 308.953 )
+
+[node name="Blob151" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 602.659, 461.172 )
+
+[node name="Blob152" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 775.095, 451.658 )
+
+[node name="Blob153" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 935.637, 547.984 )
+
+[node name="Blob154" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1108.07, 538.47 )
+
+[node name="Blob155" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 942.772, 690.688 )
+
+[node name="Blob156" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1115.21, 681.175 )
+
+[node name="Blob157" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 606.227, 559.876 )
+
+[node name="Blob158" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 778.662, 550.362 )
+
+[node name="Blob159" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 613.362, 702.58 )
+
+[node name="Blob160" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 785.797, 693.067 )
+
+[node name="Blob161" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 848.317, 249.557 )
+
+[node name="Blob162" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1020.75, 240.043 )
+
+[node name="Blob163" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 855.452, 392.262 )
+
+[node name="Blob164" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1027.89, 382.748 )
+
+[node name="Blob165" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 518.907, 261.449 )
+
+[node name="Blob166" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 691.342, 251.936 )
+
+[node name="Blob167" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 526.042, 404.154 )
+
+[node name="Blob168" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 698.477, 394.64 )
+
+[node name="Blob169" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 859.02, 490.966 )
+
+[node name="Blob170" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1031.46, 481.452 )
+
+[node name="Blob171" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 866.155, 633.671 )
+
+[node name="Blob172" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1038.59, 624.157 )
+
+[node name="Blob173" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 529.61, 502.858 )
+
+[node name="Blob174" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 702.045, 493.345 )
+
+[node name="Blob175" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 536.745, 645.563 )
+
+[node name="Blob176" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 709.18, 636.049 )
+
+[node name="Blob177" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 917.807, 244.212 )
+
+[node name="Blob178" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1090.24, 234.698 )
+
+[node name="Blob179" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 924.942, 386.917 )
+
+[node name="Blob180" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1097.38, 377.403 )
+
+[node name="Blob181" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 588.397, 256.104 )
+
+[node name="Blob182" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 760.832, 246.59 )
+
+[node name="Blob183" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 595.532, 398.809 )
+
+[node name="Blob184" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 767.967, 389.295 )
+
+[node name="Blob185" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 928.51, 485.621 )
+
+[node name="Blob186" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1100.95, 476.107 )
+
+[node name="Blob187" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 935.645, 628.326 )
+
+[node name="Blob188" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1108.08, 618.812 )
+
+[node name="Blob189" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 599.1, 497.513 )
+
+[node name="Blob190" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 771.535, 487.999 )
+
+[node name="Blob191" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 606.235, 640.218 )
+
+[node name="Blob192" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 778.67, 630.704 )
+
+[node name="Blob193" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 894.644, 313.702 )
+
+[node name="Blob194" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1067.08, 304.188 )
+
+[node name="Blob195" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 901.779, 456.407 )
+
+[node name="Blob196" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1074.21, 446.893 )
+
+[node name="Blob197" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 565.234, 325.594 )
+
+[node name="Blob198" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 737.669, 316.08 )
+
+[node name="Blob199" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 572.369, 468.299 )
+
+[node name="Blob200" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 744.804, 458.785 )
+
+[node name="Blob201" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 905.347, 555.111 )
+
+[node name="Blob202" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1077.78, 545.597 )
+
+[node name="Blob203" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 912.482, 697.816 )
+
+[node name="Blob204" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1084.92, 688.302 )
+
+[node name="Blob205" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 575.936, 567.003 )
+
+[node name="Blob206" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 748.372, 557.489 )
+
+[node name="Blob207" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 583.071, 709.708 )
+
+[node name="Blob208" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 755.507, 700.194 )
+
+[node name="Blob209" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 964.134, 308.356 )
+
+[node name="Blob210" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1136.57, 298.843 )
+
+[node name="Blob211" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 971.269, 451.061 )
+
+[node name="Blob212" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1143.7, 441.548 )
+
+[node name="Blob213" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 634.724, 320.249 )
+
+[node name="Blob214" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 807.159, 310.735 )
+
+[node name="Blob215" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 641.859, 462.953 )
+
+[node name="Blob216" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 814.294, 453.44 )
+
+[node name="Blob217" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 974.837, 549.765 )
+
+[node name="Blob218" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1147.27, 540.252 )
+
+[node name="Blob219" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 981.972, 692.47 )
+
+[node name="Blob220" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1154.41, 682.956 )
+
+[node name="Blob221" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 645.426, 561.657 )
+
+[node name="Blob222" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 817.862, 552.144 )
+
+[node name="Blob223" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 652.561, 704.362 )
+
+[node name="Blob224" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 824.997, 694.849 )
+
+[node name="Blob225" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 887.517, 251.339 )
+
+[node name="Blob226" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1059.95, 241.825 )
+
+[node name="Blob227" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 894.652, 394.044 )
+
+[node name="Blob228" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1067.09, 384.53 )
+
+[node name="Blob229" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 558.106, 263.231 )
+
+[node name="Blob230" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 730.542, 253.717 )
+
+[node name="Blob231" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 565.241, 405.936 )
+
+[node name="Blob232" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 737.677, 396.422 )
+
+[node name="Blob233" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 898.22, 492.748 )
+
+[node name="Blob234" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1070.65, 483.234 )
+
+[node name="Blob235" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 905.355, 635.453 )
+
+[node name="Blob236" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1077.79, 625.939 )
+
+[node name="Blob237" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 568.809, 504.64 )
+
+[node name="Blob238" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 741.244, 495.126 )
+
+[node name="Blob239" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 575.944, 647.345 )
+
+[node name="Blob240" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 748.38, 637.831 )
+
+[node name="Blob241" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 957.007, 245.994 )
+
+[node name="Blob242" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1129.44, 236.48 )
+
+[node name="Blob243" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 964.142, 388.698 )
+
+[node name="Blob244" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1136.58, 379.185 )
+
+[node name="Blob245" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 627.596, 257.886 )
+
+[node name="Blob246" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 800.032, 248.372 )
+
+[node name="Blob247" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 634.732, 400.59 )
+
+[node name="Blob248" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 807.167, 391.077 )
+
+[node name="Blob249" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 967.71, 487.403 )
+
+[node name="Blob250" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1140.14, 477.889 )
+
+[node name="Blob251" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 974.845, 630.107 )
+
+[node name="Blob252" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1147.28, 620.594 )
+
+[node name="Blob253" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 638.299, 499.294 )
+
+[node name="Blob254" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 1504.85, 174.759 )
+
+[node name="Blob255" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 645.434, 641.999 )
+
+[node name="Blob256" parent="BlobLayer/Blobs" instance=ExtResource( 2 )]
+position = Vector2( 817.87, 632.486 )
+
+[node name="BlobEffectsView" type="Viewport" parent="."]
+size = Vector2( 1920, 1080 )
+disable_3d = true
+usage = 0
+render_target_update_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="BlobEffectsView"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0.498039, 0.498039, 1 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
